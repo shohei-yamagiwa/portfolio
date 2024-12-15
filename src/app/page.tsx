@@ -1,15 +1,9 @@
-import { css } from "pandacss";
+import { Typography } from "@/app/components/Typography";
 
 export default function Home() {
 	return (
-		<>
-			<div
-				className={css({
-					color: "red",
-				})}
-			>
-				Hello PandaCSS!
-			</div>
-		</>
+		<main className="w-full h-screen flex flex-col justify-center items-center">
+			<div>Hello World</div>
+		</main>
 	);
 }
