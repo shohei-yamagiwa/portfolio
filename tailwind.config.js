@@ -4,7 +4,7 @@ export default {
 	darkMode: "selector",
 	theme: {
 		backgroundColor: {
-			light: "#C9D6FF",
+			light: "#E2E2E2",
 			dark: "#0F2027",
 		},
 		fontFamily: {
