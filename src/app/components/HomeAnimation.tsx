@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography } from "@/app/components/Typography";
+import { Typography } from "@/components/Typography";
 import { motion, useAnimate } from "motion/react";
 import { useEffect } from "react";
 

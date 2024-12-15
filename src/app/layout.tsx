@@ -1,4 +1,4 @@
-import { Background } from "@/app/components/Background";
+import { Background } from "@/components/Background";
 import type { Metadata } from "next";
 import { Playwrite_US_Modern, Raleway } from "next/font/google";
 
