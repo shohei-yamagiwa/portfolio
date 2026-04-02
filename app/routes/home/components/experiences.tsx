@@ -59,9 +59,7 @@ export function Experiences({ experiences }: { experiences: Experience[] }) {
                   <h3 className="text-lg font-bold text-gray-900">{exp.title}</h3>
                   <span className="text-sm font-medium text-gray-500">{exp.organization}</span>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed mt-3 whitespace-pre-line">
-                  {exp.description}
-                </p>
+                <p className="text-gray-600 text-sm leading-relaxed mt-3 whitespace-pre-line">{exp.description}</p>
               </div>
             </div>
           ))}
