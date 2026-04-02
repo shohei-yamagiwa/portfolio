@@ -5,7 +5,7 @@ export class SkillsRepository implements ISkillsRepository {
   getSkills(): Promise<Skill[]> {
     const frontend: Skill = {
       category: "Frontend",
-      items: ["TypeScript", "React", "Tailwins CSS"],
+      items: ["TypeScript", "React", "Tailwind CSS"],
     };
     const backend: Skill = {
       category: "Backend",
