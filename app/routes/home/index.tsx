@@ -22,7 +22,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-blue-200">
       <Header />
-      <Hero {...personalInfo} />
+      <Hero info={personalInfo} />
       <Skills skills={skills} />
       <Footer />
     </div>

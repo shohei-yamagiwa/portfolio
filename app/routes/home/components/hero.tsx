@@ -1,7 +1,7 @@
 import { ChevronRight, GitBranch } from "lucide-react";
 import type { PersonalInfo } from "~/model/personal-info";
 
-export function Hero(info: PersonalInfo) {
+export function Hero({ info }: { info: PersonalInfo }) {
   return (
     <section className="py-20 md:py-32 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
       <div className="flex-1 space-y-6">
