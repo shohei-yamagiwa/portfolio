@@ -4,7 +4,7 @@ import type { PersonalInfo } from "~/model/personal-info";
 export function Hero({ info }: { info: PersonalInfo }) {
   return (
     <section className="py-20 md:py-32 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-      <div className="flex-1 space-y-6">
+      <div className="order-2 md:order-1 flex-1 space-y-6">
         <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold tracking-wide">
           Class of 2028
         </div>
@@ -31,7 +31,7 @@ export function Hero({ info }: { info: PersonalInfo }) {
           </a>
         </div>
       </div>
-      <div className="flex-1 w-full flex justify-center md:justify-end">
+      <div className="order-1 md:order-2 flex-1 w-full flex justify-center md:justify-end">
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white shadow-xl relative overflow-hidden bg-linear-to-tr from-blue-100 via-white to-cyan-50">
           <img src="/profile.jpg" alt={`${info.name} profile`} className="w-full h-full object-cover" />
         </div>
