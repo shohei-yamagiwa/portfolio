@@ -32,8 +32,8 @@ export function Hero({ info }: { info: PersonalInfo }) {
         </div>
       </div>
       <div className="flex-1 w-full flex justify-center md:justify-end">
-        <div className="w-64 h-64 md:w-80 md:h-80 bg-linear-to-tr from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-white shadow-xl relative overflow-hidden">
-          <span className="text-gray-400 font-medium z-10">Profile Image</span>
+        <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white shadow-xl relative overflow-hidden bg-linear-to-tr from-blue-100 via-white to-cyan-50">
+          <img src="/profile.jpg" alt={`${info.name} profile`} className="w-full h-full object-cover" />
         </div>
       </div>
     </section>

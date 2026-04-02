@@ -15,9 +15,19 @@ export function Works({ works }: { works: Work[] }) {
               key={work.id}
               className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              // TODO: 画像を表示する
-              <div className="h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-                <span className="text-gray-400 font-medium">{work.previewImagePlaceholder}</span>
+              <div className="h-48 bg-linear-to-br from-slate-100 via-white to-blue-50 relative overflow-hidden flex items-center justify-center">
+                {work.previewImageUrl ? (
+                  <div className="w-full h-full">
+                    <img
+                      src={work.previewImageUrl}
+                      alt={`${work.title} preview`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                ) : (
+                  <span className="text-gray-400 font-medium">{work.previewImagePlaceholder}</span>
+                )}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-gray-900/10 to-transparent pointer-events-none" />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-gray-700 shadow-sm">
                   {work.type}
                 </div>

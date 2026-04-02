@@ -8,7 +8,7 @@ export class WorksRepository implements IWorksRepository {
       title: "Constell",
       description:
         "Constellは、散らばった知識（Web記事、メモ、アイデアなど）をAIが分析し、意味的な関連性に基づいて自動的に繋ぎ合わせる「第2の脳」を目指すツールです。単なる情報の蓄積ではなく、知識同士がどのように結びついているかを視覚的に探索することで、新しい発見を促します。",
-      previewImageUrl: "/images/works/constell.png",
+      previewImageUrl: "/home.png",
       previewImagePlaceholder: "Constell Preview",
       skills: ["Kotlin", "Jetpack Compose", "Supabase"],
       type: "Android App",
