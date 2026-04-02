@@ -5,6 +5,7 @@ import { personalInfoRepository, skillsRepository, worksRepository } from "~/glo
 import { Hero } from "./components/hero";
 import { Skills } from "./components/skills";
 import { Works } from "./components/works";
+import { Contact } from "./components/contact";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Shohei Yamagiwa" }, { name: "description", content: "Shohei Yamagiwa's portfolio" }];
@@ -27,6 +28,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       <Hero info={personalInfo} />
       <Skills skills={skills} />
       <Works works={works} />
+      <Contact info={personalInfo} />
       <Footer />
     </div>
   );
