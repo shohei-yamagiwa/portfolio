@@ -5,19 +5,19 @@ export class SkillsRepository implements ISkillsRepository {
   getSkills(): Promise<Skill[]> {
     const frontend: Skill = {
       category: "Frontend",
-      items: ["React", "Vue", "Angular", "Svelte"],
+      items: ["TypeScript", "React", "Tailwins CSS"],
     };
     const backend: Skill = {
       category: "Backend",
-      items: ["Node.js", "Express", "Django", "Spring Boot"],
+      items: ["Node.js", "Hono", "Supabase", "PostgreSQL", "Firestore"],
     };
     const mobile: Skill = {
       category: "Mobile",
-      items: ["React Native", "Flutter", "Swift", "Kotlin"],
+      items: ["Kotlin", "Jetpack Compose"],
     };
     const toolsAndOthers: Skill = {
       category: "ToolsAndOthers",
-      items: ["Git", "Docker", "Kubernetes", "AWS"],
+      items: ["Git", "Docker", "GitHub", "Google Cloud"],
     };
 
     return Promise.resolve([frontend, backend, mobile, toolsAndOthers]);
