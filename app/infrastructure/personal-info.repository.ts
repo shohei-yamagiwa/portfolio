@@ -6,12 +6,12 @@ export class PersonalInfoRepository implements IPersonalInfoRepository {
     return new Promise((resolve) =>
       resolve({
         name: "Shohei Yamagiwa",
-        role: "Software Engineer",
-        bio: "I am a software engineer specializing in frontend development. I have experience in building web applications using React, TypeScript, and other modern technologies. I am passionate about creating user-friendly and visually appealing interfaces.",
-        email: "",
+        role: "Webエンジニア・モバイルエンジニア",
+        bio: "フロントエンドを軸にしながら、Webアプリケーションの設計・実装からバックエンド、モバイルアプリ開発まで幅広く取り組んでいます。実務経験、研究活動を通して、ユーザー様に価値を届け続けるためのプロダクト開発を目指しています。",
+        email: "shohei.yamagiwa@gmail.com",
         links: {
-          github: "",
-          zenn: "",
+          github: "https://github.com/shohei-yamagiwa",
+          zenn: "https://zenn.dev/shohei_yamagiwa",
           levtech: "",
           supporterz: "",
         },
